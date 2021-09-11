@@ -16,7 +16,7 @@ pipeline{
         }
         stage('Build'){
             steps{
-                echo 'Build'
+                echo currentBuild.result
             }
         }
     }
