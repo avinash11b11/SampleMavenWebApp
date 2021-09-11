@@ -9,7 +9,7 @@ pipeline{
         stage('Checkout'){
             steps{
                 echo 'test'
-        //        checkout poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github_pat', url: 'https://github.com/avinash11b11/SampleMavenWebApp']]]
+                  checkout poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github_pat', url: 'https://github.com/avinash11b11/SampleMavenWebApp']]]
             }
         }
     }
