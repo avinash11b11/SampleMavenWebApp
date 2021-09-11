@@ -24,7 +24,9 @@ pipeline{
         }
         stage('Build'){
             steps{
-               
+                   bat '''
+                       mvn --version
+                       '''
             }
         }
     }
