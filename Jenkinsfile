@@ -5,10 +5,7 @@ pipeline{
             steps{
                 cleanWs()
                 
-                bat '''
-                   set MAVEN_HOME=E:/Work Related/Softwares/apache-maven-3.6.3-bin/apache-maven-3.6.3/
-                    
-                '''
+                
                 
                 echo "Java Home : ${env.JAVA_HOME}"
                 echo "Maven Home : ${env.MAVEN_HOME}"
