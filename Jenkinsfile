@@ -22,7 +22,7 @@ pipeline{
         stage('Build'){
             steps{
                    bat '''
-                       mvn --version
+                       mvn clean install
                        '''
             }
         }
