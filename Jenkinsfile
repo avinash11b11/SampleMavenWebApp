@@ -6,7 +6,7 @@ pipeline{
                 cleanWs()
                 
                 bat '''
-                    set MAVEN_HOME=E:\Work Related\Softwares\apache-maven-3.6.3-bin\apache-maven-3.6.3\
+                   set MAVEN_HOME=E:/Work Related/Softwares/apache-maven-3.6.3-bin/apache-maven-3.6.3/
                     
                 '''
                 
