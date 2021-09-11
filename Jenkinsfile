@@ -4,6 +4,8 @@ pipeline{
         stage('Clean'){
             steps{
                 cleanWs()
+                echo 'Java Home : ${env.JAVA_HOME}'
+                echo 'Maven Home : ${env.MAVEN_HOME}'
             }
         }
         stage('Checkout'){
